@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+   >
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="0dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="5dp"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        app:cardBackgroundColor="@color/blueSky"
+        tools:context=".MainActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:gravity="center"
+                android:text="User Information"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/txtHeader"
+                android:layout_margin="20sp"
+                android:background="#C8E4F1"
+                android:hint="Name"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/editAge"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/editName"
+                android:layout_margin="20dp"
+                android:background="#C8E4F1"
+                android:hint="Age"
+                android:inputType="number"
+                android:padding="10dp" />
+
+
+
+            <Switch
+                android:id="@+id/switchButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editAge"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="20dp"
+                android:text="onaylıyorum"
+                android:textSize="20sp"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/switchButton"
+                android:layout_margin="20dp"
+                android:text="Logın" />
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</layout>
